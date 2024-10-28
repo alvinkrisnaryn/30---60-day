@@ -1,0 +1,39 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.header {
+  padding: 50px 150px 20px 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.judul h3 {
+  padding: 30px 180px 20px 180px;
+  text-align: center;
+}
+
+.judul p,
+address {
+  text-align: center;
+}
+
+.sub-judul {
+  font-weight: bold;
+}
+
+.abstrak {
+  padding: 30px 150px 15px 150px;
+  text-align: justify;
+}
+
+.abstrak-english {
+  padding: 5px 150px 20px 150px;
+  text-align: justify;
+}
+
+.pendahuluan {
+  padding: 0px 150px 20px 150px;
+  text-align: justify;
+}
