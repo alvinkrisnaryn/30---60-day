@@ -1,72 +1,74 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
   <head>
-    <title>CSS Grid Tutorial</title>
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700"
-      rel="stylesheet"
-    />
-    <link media="all" type="text/css" rel="stylesheet" href="css/coba.css" />
+    <title>Jurnal Layout</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+      }
+
+      .page {
+        width: 210mm; /* Ukuran A4 */
+        height: 297mm;
+        margin: 20px auto;
+        background: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        padding: 20mm;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .header,
+      .footer {
+        text-align: center;
+        font-size: 14px;
+        color: #555;
+      }
+
+      .content {
+        margin-top: 20px;
+        margin-bottom: 50px; /* Beri jarak untuk footer */
+        text-align: justify;
+        font-size: 12pt;
+        line-height: 1.5;
+      }
+
+      .footer {
+        position: absolute;
+        bottom: 20mm;
+        left: 20mm;
+        right: 20mm;
+        border-top: 10px solid #ddd;
+        padding-top: 5px;
+      }
+
+      .footer .page-number {
+        float: right;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <a href="#">Libertians > *</a>
-    </header>
-
-    <div class="container">
-      <div id="content">
-        <h1>Down with the state</h1>
-        <p>
-          Abandon the left vs. right paradigm and adopt new ideals, where
-          consistency and logic reign supreme.
-        </p>
+    <div class="page">
+      <div class="header">
+        <strong>Judul Artikel</strong>
       </div>
-      <img src="logo.png" />
+      <div class="content">
+        <h2>Pendahuluan</h2>
+        <p>
+          Sumber daya manusia merupakan faktor yang sangat penting dalam sebuah
+          organisasi baik skala besar maupun kecil...
+        </p>
+        <!-- Tambahkan isi lainnya -->
+      </div>
+      <div class="footer">
+        <span>Penulis: I Gusti Gde Oka Pradnyana</span>
+        <span class="page-number">Halaman 43</span>
+      </div>
     </div>
-
-    <footer>
-      <ul>
-        <li>
-          <span>But what about the roads?</span>
-          You just don't understand economics, like supply and demand. Don't
-          worry kiddo, where there's a demand there will be a supply; we'll all
-          have our roads.
-        </li>
-        <li>
-          <span>Is taxation theft?</span>
-          If I came to your house with some heavily armed buddies, demanded that
-          you and your neighbors give me a percentage of your income, in return
-          for some crappy monopolized services that you didn't ask for, would
-          you consider that theft?
-        </li>
-        <li>
-          <span>So, what you're saying is...?</span>
-          Libertarians want to live in a world where gay couples can protect
-          their poppy fields with fully automatic weapons. A world where
-          voluntaryism and property rights are treated with the highest respect.
-        </li>
-        <li>
-          <span>But what about the roads?</span>
-          You just don't understand economics, like supply and demand. Don't
-          worry kiddo, where there's a demand there will be a supply; we'll all
-          have our roads.
-        </li>
-        <li>
-          <span>Is taxation theft?</span>
-          If I came to your house with some heavily armed buddies, demanded that
-          you and your neighbors give me a percentage of your income, in return
-          for some crappy monopolized services that you didn't ask for, would
-          you consider that theft?
-        </li>
-        <li>
-          <span>So, what you're saying is...?</span>
-          Libertarians want to live in a world where gay couples can protect
-          their poppy fields with fully automatic weapons. A world where
-          voluntaryism and property rights are treated with the highest respect.
-        </li>
-      </ul>
-    </footer>
   </body>
 </html>

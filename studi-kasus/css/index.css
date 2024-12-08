@@ -4,63 +4,116 @@
 }
 .body {
   background-color: #3f3f3f;
-  padding: 15px 450px;
+  font-family: "Times New Roman", Times, serif;
 }
 .page-1 {
-  background-color: #ffffff;
+  width: 210mm; /* Ukuran A4 */
+  height: 297mm;
+  margin: 20px auto;
+  background: white;
+  padding: 20mm;
+  position: relative;
+  overflow: hidden;
 
   .header {
-    padding: 50px 150px 20px 150px;
     display: flex;
     justify-content: space-between;
     font-size: 14px;
   }
 
-  .judul h3 {
-    padding: 50px 180px 20px 180px;
-    text-align: center;
-  }
-
-  .judul p,
-  address {
+  .judul {
+    padding-top: 20mm;
     text-align: center;
   }
 
   .sub-judul {
+    padding-top: 5mm;
     font-weight: bold;
   }
 
   .abstrak {
-    padding: 30px 150px 15px 150px;
+    padding-top: 10mm;
     text-align: justify;
   }
 
   .abstrak-english {
-    padding: 5px 150px 20px 150px;
+    padding-top: 5mm;
     text-align: justify;
+    font-style: italic;
   }
 
   .pendahuluan {
-    padding: 0px 150px 20px 150px;
+    padding-top: 10mm;
     text-align: justify;
   }
-  article {
+
+  .pendahuluan article {
     text-indent: 2em;
   }
 }
 
 .page-2 {
-  background-color: #ffffff;
+  width: 210mm; /* Ukuran A4 */
+  height: 297mm;
+  margin: 20px auto;
+  background: white;
+  padding: 20mm;
+  position: relative;
+  overflow: hidden;
 
   .header-2 {
-    padding: 50px 150px 20px 150px;
     display: flex;
     justify-content: space-between;
     font-size: 14px;
   }
   .isi {
-    padding: 40px 150px 20px 150px;
+    margin-top: 50px;
+    margin-bottom: 20px; /* Beri jarak untuk footer */
     text-align: justify;
+    font-size: 12pt;
+    line-height: 1.5;
     text-indent: 2em;
+  }
+  .isi-1 {
+    text-indent: 0em;
+  }
+}
+
+.page-3 {
+  width: 210mm; /* Ukuran A4 */
+  height: 297mm;
+  margin: 20px auto;
+  background: white;
+  padding: 20mm;
+  position: relative;
+  overflow: hidden;
+
+  .header-2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  .isi {
+    margin-top: 50px;
+    margin-bottom: 20px; /* Beri jarak untuk footer */
+    text-align: justify;
+    font-size: 12pt;
+    line-height: 1.5;
+    text-indent: 2em;
+  }
+  .isi-2 {
+    text-indent: 0em;
+  }
+
+  .dasar-teori {
+    padding-top: 10mm;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-indent: 0em;
+  }
+  .sub-judul {
+    text-transform: capitalize;
+    font-weight: bold;
+    text-indent: 0em;
   }
 }
